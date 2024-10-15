@@ -11,10 +11,10 @@ function playGame(playerInput){
     printMessage('Nie znam ruchu o id ' + argMoveId + '.');
     return 'nieznany ruch';
   }
-  let randomNumber = Math.floor(Math.random() * 3 + 1);
-  let computerMove = getMoveName(randomNumber);
+  const randomNumber = Math.floor(Math.random() * 3 + 1);
+  const computerMove = getMoveName(randomNumber);
   /*let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');*/
-  let playerMove = getMoveName(playerInput);
+  const playerMove = getMoveName(playerInput);
 
   function displayResult(argComputerMove, argPlayerMove){
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
